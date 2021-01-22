@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CS371</string>
+    <string name="button_hello">Say Hi</string>
+    <string name="button_countUp">Count Up</string>
+    <string name="textView_count">0</string>
+    <string name="toast_message">Hello</string>
+</resources>
