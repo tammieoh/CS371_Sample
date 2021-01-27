@@ -4,5 +4,6 @@
     <string name="button_countUp">Count Up</string>
     <string name="textView_count">0</string>
     <string name="toast_message">Hello</string>
-    <string name="second_activity">Secibd Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="button_goBack">Go Back</string>
 </resources>
