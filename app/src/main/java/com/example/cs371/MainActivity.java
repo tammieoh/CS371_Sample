@@ -2,6 +2,7 @@ package com.example.cs371;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //handle what happens after i click
-                sayHello(v);
+//                sayHello(v);
+                launchNextActivity(v);
             }
         });
     }
@@ -50,5 +52,18 @@ public class MainActivity extends AppCompatActivity {
         if(textView_count != null) {
             textView_count.setText(Integer.toString(number)); // set text takes a string
         }
+    }
+    public void countDown(View view) {
+        if(number > 0) {
+            number--;
+        }
+        if(textView_count != null) {
+            textView_count.setText(Integer.toString(number));
+        }
+    }
+    public void launchNextActivity(View view) {
+        // create an intent and you need to specify from and to
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
